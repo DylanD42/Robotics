@@ -1,0 +1,21 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/cs0/ddanie31/csci458_ws/install/mecanum_robot/share/mecanum_robot/urdf/mecanum_robot.urdf.xacro
+-- Up-to-date symlink: /home/cs0/ddanie31/csci458_ws/install/mecanum_robot/share/mecanum_robot/urdf/mecanum_robot.urdf.xacro~
+-- Symlinking: /home/cs0/ddanie31/csci458_ws/install/mecanum_robot/share/mecanum_robot/worlds/small_room.world
+-- Symlinking: /home/cs0/ddanie31/csci458_ws/install/mecanum_robot/share/mecanum_robot/launch/mecanum_world.launch.py
+-- Up-to-date symlink: /home/cs0/ddanie31/csci458_ws/install/mecanum_robot/share/ament_index/resource_index/package_run_dependencies/mecanum_robot
+-- Up-to-date symlink: /home/cs0/ddanie31/csci458_ws/install/mecanum_robot/share/ament_index/resource_index/parent_prefix_path/mecanum_robot
+-- Up-to-date symlink: /home/cs0/ddanie31/csci458_ws/install/mecanum_robot/share/mecanum_robot/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/cs0/ddanie31/csci458_ws/install/mecanum_robot/share/mecanum_robot/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/cs0/ddanie31/csci458_ws/install/mecanum_robot/share/mecanum_robot/environment/path.sh
+-- Up-to-date symlink: /home/cs0/ddanie31/csci458_ws/install/mecanum_robot/share/mecanum_robot/environment/path.dsv
+-- Up-to-date symlink: /home/cs0/ddanie31/csci458_ws/install/mecanum_robot/share/mecanum_robot/local_setup.bash
+-- Up-to-date symlink: /home/cs0/ddanie31/csci458_ws/install/mecanum_robot/share/mecanum_robot/local_setup.sh
+-- Up-to-date symlink: /home/cs0/ddanie31/csci458_ws/install/mecanum_robot/share/mecanum_robot/local_setup.zsh
+-- Up-to-date symlink: /home/cs0/ddanie31/csci458_ws/install/mecanum_robot/share/mecanum_robot/local_setup.dsv
+-- Symlinking: /home/cs0/ddanie31/csci458_ws/install/mecanum_robot/share/mecanum_robot/package.dsv
+-- Up-to-date symlink: /home/cs0/ddanie31/csci458_ws/install/mecanum_robot/share/ament_index/resource_index/packages/mecanum_robot
+-- Up-to-date symlink: /home/cs0/ddanie31/csci458_ws/install/mecanum_robot/share/mecanum_robot/cmake/mecanum_robotConfig.cmake
+-- Up-to-date symlink: /home/cs0/ddanie31/csci458_ws/install/mecanum_robot/share/mecanum_robot/cmake/mecanum_robotConfig-version.cmake
+-- Up-to-date symlink: /home/cs0/ddanie31/csci458_ws/install/mecanum_robot/share/mecanum_robot/package.xml

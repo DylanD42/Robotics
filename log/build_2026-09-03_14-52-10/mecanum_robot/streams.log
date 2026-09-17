@@ -1,0 +1,15 @@
+[0.029s] Invoking command in '/home/cs0/ddanie31/csci458_ws/build/mecanum_robot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/cs0/ddanie31/csci458_ws/src/mecanum_robot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/cs0/ddanie31/csci458_ws/install/mecanum_robot
+[0.039s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.134s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.178s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.251s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/symlink_install/install.cmake:43 (_install):
+[0.251s]   _install does not recognize sub-command DIRCTORY
+[0.251s] Call Stack (most recent call first):
+[0.251s]   CMakeLists.txt:26 (install)
+[0.251s] 
+[0.251s] [0m
+[0.332s] -- Added test 'lint_cmake' to check CMake code style
+[0.351s] -- Added test 'xmllint' to check XML markup files
+[0.371s] -- Configuring incomplete, errors occurred!
+[0.371s] See also "/home/cs0/ddanie31/csci458_ws/build/mecanum_robot/CMakeFiles/CMakeOutput.log".
+[0.378s] Invoked command in '/home/cs0/ddanie31/csci458_ws/build/mecanum_robot' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/cs0/ddanie31/csci458_ws/src/mecanum_robot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/cs0/ddanie31/csci458_ws/install/mecanum_robot

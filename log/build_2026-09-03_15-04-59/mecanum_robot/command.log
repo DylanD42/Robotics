@@ -1,0 +1,6 @@
+Invoking command in '/home/cs0/ddanie31/csci458_ws/build/mecanum_robot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/cs0/ddanie31/csci458_ws/src/mecanum_robot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/cs0/ddanie31/csci458_ws/install/mecanum_robot
+Invoked command in '/home/cs0/ddanie31/csci458_ws/build/mecanum_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/cs0/ddanie31/csci458_ws/src/mecanum_robot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/cs0/ddanie31/csci458_ws/install/mecanum_robot
+Invoking command in '/home/cs0/ddanie31/csci458_ws/build/mecanum_robot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/cs0/ddanie31/csci458_ws/build/mecanum_robot -- -j16 -l16
+Invoked command in '/home/cs0/ddanie31/csci458_ws/build/mecanum_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/cs0/ddanie31/csci458_ws/build/mecanum_robot -- -j16 -l16
+Invoking command in '/home/cs0/ddanie31/csci458_ws/build/mecanum_robot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/cs0/ddanie31/csci458_ws/build/mecanum_robot
+Invoked command in '/home/cs0/ddanie31/csci458_ws/build/mecanum_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/cs0/ddanie31/csci458_ws/build/mecanum_robot
