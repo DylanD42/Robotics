@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<robot name="mecanum_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- ============ Properties ============ -->
+  <xacro:property name="chassis_length" value="0.254"/>
+  <xacro:property name="chassis_width"  value="0.1524"/>
+  <xacro:property name="chassis_height" value="0.083"/>
+  <xacro:property name="chassis_mass"   value="5.0"/>
+
+  <xacro:property name="wheel_radius" value="0.034"/>
+  <xacro:property name="wheel_width"  value="0.0285"/>
+  <xacro:property name="wheel_mass"   value="0.5"/>
+
+  <xacro:property name="track_width"  value="0.21"/>
+  <xacro:property name="axle_length"  value="0.194"/>
+  <xacro:property name="wheel_z"      value="0.0"/>
+
+  <!-- ============ Chassis ============ -->
+  <link name="base_link"/>
+
+  <link name="chassis">
+    <inertial>
+      <mass value="${chassis_mass}"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="0.05" ixy="0" ixz="0" iyy="0.08" iyz="0" izz="0.1"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <box size="${chassis_length} ${chassis_width} ${chassis_height}"/>
+      </geometry>
+      <material name="chassis_grey">
+        <color rgba="0.3 0.3 0.35 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="${chassis_length} ${chassis_width} ${chassis_height}"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="base_to_chassis" type="fixed">
+    <parent link="base_link"/>
+    <child link="chassis"/>
+    <origin xyz="0 0 ${wheel_radius}"/>
+  </joint>
+
+  <!-- ============ Wheel macro ============ -->
+  <!-- Placeholder cylinder wheels for now - real roller geometry is a later
+       refinement once Week 3 kinematics are in place and you actually need
+       to reason about roller contact angles. -->
+  <xacro:macro name="wheel" params="prefix x_offset y_offset">
+    <link name="${prefix}_wheel">
+      <inertial>
+        <mass value="${wheel_mass}"/>
+        <origin xyz="0 0 0"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual>
+        <origin rpy="1.5708 0 0" xyz="0 0 0"/>
+        <geometry>
+          <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
+        </geometry>
+        <material name="wheel_black">
+          <color rgba="0.05 0.05 0.05 1.0"/>
+        </material>
+      </visual>
+      <collision>
+        <origin rpy="1.5708 0 0" xyz="0 0 0"/>
+        <geometry>
+          <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="${prefix}_wheel_joint" type="continuous">
+      <parent link="chassis"/>
+      <child link="${prefix}_wheel"/>
+      <origin xyz="${x_offset} ${y_offset} -${wheel_radius}"/>
+      <axis xyz="0 1 0"/>
+    </joint>
+  </xacro:macro>
+
+  <!-- Front-left, front-right, rear-left, rear-right -->
+  <xacro:wheel prefix="front_left"  x_offset="${axle_length/2}"  y_offset="${track_width/2}"/>
+  <xacro:wheel prefix="front_right" x_offset="${axle_length/2}"  y_offset="-${track_width/2}"/>
+  <xacro:wheel prefix="rear_left"   x_offset="-${axle_length/2}" y_offset="${track_width/2}"/>
+  <xacro:wheel prefix="rear_right"  x_offset="-${axle_length/2}" y_offset="-${track_width/2}"/>
+
+  <!-- ============ Gazebo plugin: planar move (Week 2 placeholder) ============ -->
+  <!-- Takes cmd_vel (linear.x, linear.y, angular.z) and moves the base directly.
+       No wheel-level kinematics involved - this is genuinely holonomic motion,
+       not a diff-drive approximation, since there's no wheel-speed math to
+       constrain it. Replaced in Week 3 by your own kinematics node, though
+       body motion will still be relayed through a plugin like this one rather
+       than emerging from simulated wheel-ground contact. -->
+  <gazebo>
+    <plugin name="planar_move_controller" filename="libgazebo_ros_planar_move.so">
+      <ros>
+        <namespace>/</namespace>
+        <remapping>cmd_vel:=cmd_vel</remapping>
+        <remapping>odom:=odom</remapping>
+      </ros>
+      <update_rate>50</update_rate>
+      <publish_odom>true</publish_odom>
+      <publish_odom_tf>true</publish_odom_tf>
+      <publish_wheel_tf>false</publish_wheel_tf>
+      <odometry_frame>odom</odometry_frame>
+      <robot_base_frame>base_link</robot_base_frame>
+      <covariance_x>0.0001</covariance_x>
+      <covariance_y>0.0001</covariance_y>
+      <covariance_yaw>0.01</covariance_yaw>
+    </plugin>
+  </gazebo>
+
+</robot>

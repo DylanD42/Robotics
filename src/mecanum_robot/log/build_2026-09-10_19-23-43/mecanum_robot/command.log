@@ -1,0 +1,4 @@
+Invoking command in '/home/dylan/csci458_ws/src/mecanum_robot/build/mecanum_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dylan/csci458_ws/src/mecanum_robot/build/mecanum_robot -- -j16 -l16
+Invoked command in '/home/dylan/csci458_ws/src/mecanum_robot/build/mecanum_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dylan/csci458_ws/src/mecanum_robot/build/mecanum_robot -- -j16 -l16
+Invoking command in '/home/dylan/csci458_ws/src/mecanum_robot/build/mecanum_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dylan/csci458_ws/src/mecanum_robot/build/mecanum_robot
+Invoked command in '/home/dylan/csci458_ws/src/mecanum_robot/build/mecanum_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dylan/csci458_ws/src/mecanum_robot/build/mecanum_robot

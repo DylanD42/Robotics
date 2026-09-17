@@ -1,0 +1,26 @@
+[0.015s] Invoking command in '/home/dylan/csci458_ws/build/mecanum_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dylan/csci458_ws/build/mecanum_robot -- -j16 -l16
+[0.078s] Invoked command in '/home/dylan/csci458_ws/build/mecanum_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dylan/csci458_ws/build/mecanum_robot -- -j16 -l16
+[0.086s] Invoking command in '/home/dylan/csci458_ws/build/mecanum_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dylan/csci458_ws/build/mecanum_robot
+[0.091s] -- Install configuration: ""
+[0.092s] -- Execute custom install script
+[0.093s] -- Up-to-date symlink: /home/dylan/csci458_ws/install/mecanum_robot/share/mecanum_robot/urdf/mecanum_robot.urdf.xacro
+[0.094s] -- Up-to-date symlink: /home/dylan/csci458_ws/install/mecanum_robot/share/mecanum_robot/worlds/small_room.world
+[0.094s] -- Up-to-date symlink: /home/dylan/csci458_ws/install/mecanum_robot/share/mecanum_robot/launch/mecanum_world.launch.py
+[0.095s] -- Up-to-date symlink: /home/dylan/csci458_ws/install/mecanum_robot/lib/mecanum_robot/forward_kinematics_node.py
+[0.095s] -- Up-to-date symlink: /home/dylan/csci458_ws/install/mecanum_robot/lib/mecanum_robot/robot_controller_node.py
+[0.095s] -- Up-to-date symlink: /home/dylan/csci458_ws/install/mecanum_robot/share/ament_index/resource_index/package_run_dependencies/mecanum_robot
+[0.095s] -- Up-to-date symlink: /home/dylan/csci458_ws/install/mecanum_robot/share/ament_index/resource_index/parent_prefix_path/mecanum_robot
+[0.096s] -- Up-to-date symlink: /home/dylan/csci458_ws/install/mecanum_robot/share/mecanum_robot/environment/ament_prefix_path.sh
+[0.096s] -- Up-to-date symlink: /home/dylan/csci458_ws/install/mecanum_robot/share/mecanum_robot/environment/ament_prefix_path.dsv
+[0.096s] -- Up-to-date symlink: /home/dylan/csci458_ws/install/mecanum_robot/share/mecanum_robot/environment/path.sh
+[0.096s] -- Up-to-date symlink: /home/dylan/csci458_ws/install/mecanum_robot/share/mecanum_robot/environment/path.dsv
+[0.097s] -- Up-to-date symlink: /home/dylan/csci458_ws/install/mecanum_robot/share/mecanum_robot/local_setup.bash
+[0.097s] -- Up-to-date symlink: /home/dylan/csci458_ws/install/mecanum_robot/share/mecanum_robot/local_setup.sh
+[0.097s] -- Up-to-date symlink: /home/dylan/csci458_ws/install/mecanum_robot/share/mecanum_robot/local_setup.zsh
+[0.098s] -- Up-to-date symlink: /home/dylan/csci458_ws/install/mecanum_robot/share/mecanum_robot/local_setup.dsv
+[0.098s] -- Symlinking: /home/dylan/csci458_ws/install/mecanum_robot/share/mecanum_robot/package.dsv
+[0.107s] -- Up-to-date symlink: /home/dylan/csci458_ws/install/mecanum_robot/share/ament_index/resource_index/packages/mecanum_robot
+[0.107s] -- Up-to-date symlink: /home/dylan/csci458_ws/install/mecanum_robot/share/mecanum_robot/cmake/mecanum_robotConfig.cmake
+[0.107s] -- Up-to-date symlink: /home/dylan/csci458_ws/install/mecanum_robot/share/mecanum_robot/cmake/mecanum_robotConfig-version.cmake
+[0.107s] -- Up-to-date symlink: /home/dylan/csci458_ws/install/mecanum_robot/share/mecanum_robot/package.xml
+[0.109s] Invoked command in '/home/dylan/csci458_ws/build/mecanum_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dylan/csci458_ws/build/mecanum_robot
